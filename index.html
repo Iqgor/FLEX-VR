@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <script src="js/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene stats>
+        <a-sky color="lightblue"></a-sky>
+        <a-camera position="0 2 8">
+            <a-cursor color="black"></a-cursor>
+        </a-camera>
+        <a-box position="0 2 -5" color="red">
+            <a-sound src="sounds/622741__foleyhaven__footsteps-outside-01.flac" autoplay="true" loop="true"></a-sound>
+        </a-box>
+        <a-box src="img/pexels-maria-tyutina-5596125.jpg" position="-5 2 0" ></a-box>
+        <a-entity rotation="0 0 0" animation="property: rotation; to: -2 360 0; easing:linear; loop: true; dur: 9000 ">
+
+            <a-sphere position="5 0 0" color="mediumseagreen"></a-sphere>
+                
+        </a-entity>
+        <a-cone color="pink" position="0 -5.9 0 "></a-cone>
+
+        <a-box position="-2 1.6 -5" animation="property: rotation; to:0 360 0;resumeEvents:mouseleave;autoplay:false; dur: 5000; easing: linear; loop: true" color="#5EE6EB"></a-box>
+        <a-box position="3 -2 -4" color="blue"></a-box>
+        <a-box position="-3 5 9" color="purple" animation="property:position;pauseEvents:mouseenter;resumeEvents:mouseleave; dir:alternate; to: -3 -6  9;  dur:8000; loop:true" ></a-box>
+
+        <a-sphere animation="property: color; to:#00FF00; dur:3000; easing:linear;" position="0 -3 0" color="yellow"></a-sphere>
+        <a-sphere position="-3 -2 -8" color="orange"></a-sphere>
+
+        <a-ring position="5 6-4" color="#C5D8A4"></a-ring>
+        <a-plane  rotation="-90 0 0" color="violet" width="30" height="30" position="0 -5 0" ></a-plane>
+        <a-torus-knot position="8 2 0" color="#0E185F"></a-torus-knot>
+        <a-image src="img/741b193b0886098103eb62e874837d80.jpg"></a-image>
+    </a-scene>
+</body>
+
+</html>
