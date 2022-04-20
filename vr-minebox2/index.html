@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js" defer></script>
+    <script src="js/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> wood: <span id='wood'>0</span></h2>
+    <h2> stone: <span id="steen">0</span></h2>
+    <a-scene>
+        <a-camera>
+            <a-cursor color="black">
+                <a-cone visible="false" id="grabbed--cone" radius-bottom="0.5" height="1" color="red" position="1.2 -0.4 0 " ></a-cone>
+            </a-cursor>
+        </a-camera>
+        <a-plane width="20" height="20" color="#4E944F" position="0 0 0" rotation="-90 0 0 "></a-plane>
+        <!-- boom-->
+        <!--- stam-->
+        <a-box class="boom" width="1" height="1" depth="1" color="#8E3200" position="6 0.5 0" ></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="#8E3200" position="6 1.5 0" ></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="#8E3200" position="6 2.5 0" ></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="#8E3200" position="6 3.5 0" ></a-box>
+        <!-- blad-->
+        <a-box class="boom" width="1" height="1" depth="1" color="green" position="6 4.5 -1"></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="green" position="6 4.5 0"></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="green" position="6 4.5 1"></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="green" position="6 5.5 -0.5"></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="green" position="6 5.5 0.5"></a-box>
+        <a-box class="boom" width="1" height="1" depth="1" color="green" position="6 6.5 0"></a-box>
+        <!-- cone-->
+        <a-cone visible="true" id="cone" radius-bottom="1" height="2" color="red" position="3 0.5 -6"></a-cone>
+        <!--kasteel-->
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 0.5 6" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 0.5 5" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 0.5 4" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 0.5 3" ></a-box>
+
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 1.5 6" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 1.5 5" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 1.5 4" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-6 1.5 3" ></a-box>
+
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-5 0.5 6" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-4 0.5 6" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 0.5 6" ></a-box>
+
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-5 1.5 6" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-4 1.5 6" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 1.5 6" ></a-box>
+
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 0.5 5" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 0.5 4" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 0.5 3" ></a-box>
+
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 1.5 5" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 1.5 4" ></a-box>
+        <a-box class="steen" width='1' height="1" depth="1" color='#3A3845' position="-3 1.5 3" ></a-box>
+
+        <a-box class="steen" width='1' height="0.5" depth="1" color='#3A3845' position="-4 2 3" ></a-box>
+        <a-box class="steen" width='1' height="0.5" depth="1" color='#3A3845' position="-5 2 3" ></a-box>
+        <a-box class="steen" width='1' height="0.5" depth="1" color='#3A3845' position="-4 2 4" ></a-box>
+        <a-box class="steen" width='1' height="0.5" depth="1" color='#3A3845' position="-5 2 4" ></a-box>
+        <a-box class="steen" width='1' height="0.5" depth="1" color='#3A3845' position="-4 2 5" ></a-box>
+        <a-box class="steen" width='1' height="0.5" depth="1" color='#3A3845' position="-5 2 5" ></a-box>
+
+        <a-cone class="steen" radius-bottom="0.5" height="1.5"  color='#3A3845' position="-3 2.5 3" ></a-cone>
+        <a-cone class="steen" radius-bottom="0.5" height="1.5"  color='#3A3845' position="-6 2.5 3" ></a-cone>
+        <a-cone class="steen" radius-bottom="0.5" height="1.5"  color='#3A3845' position="-3 2.5 6" ></a-cone>
+        <a-cone class="steen" radius-bottom="0.5" height="1.5"  color='#3A3845' position="-6 2.5 6" ></a-cone>
+        
+    </a-scene>
+</body>
+
+</html>
